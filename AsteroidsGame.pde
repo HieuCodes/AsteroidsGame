@@ -29,7 +29,7 @@ public void draw()
     theList.get(i).move();
   for (int e = 0; e < shots.size(); e++){
       float d3 = dist((float)shots.get(e).getX(),(float)shots.get(e).getY(),(float)theList.get(i).getX(),(float)theList.get(i).getY());
-      if (d3 < 20){
+      if (d3 < 10){
       theList.remove(i);
       shots.remove(e);
       score--;
